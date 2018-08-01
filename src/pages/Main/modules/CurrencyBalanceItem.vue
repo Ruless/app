@@ -17,6 +17,12 @@
 </div>
 </template>
 
+<script>
+export default {
+    
+}
+</script>
+
 <style lang="scss" scoped>
 .currency {
     font-family: Roboto;
@@ -30,6 +36,10 @@
     box-sizing: border-box;
     border-radius: 3px;
     padding: 10px;
+    margin: 5px 0;
+    &:first-child {
+        margin-top: 0;
+    }
     &_left {
         display: flex;
         align-items: center;

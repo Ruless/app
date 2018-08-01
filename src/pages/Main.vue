@@ -1,6 +1,7 @@
 <template>
 <q-page>
     <CurrencyBalance></CurrencyBalance>
+    <Table></Table>
 </q-page>
 </template>
 <script>
@@ -9,6 +10,7 @@
 export default {
     components: {
         CurrencyBalance: () => import ('pages/Main/CurrencyBalance.vue'),
+        Table: () => import ('pages/Main/Table.vue'),
 
     }
 }
