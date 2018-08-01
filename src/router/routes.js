@@ -4,9 +4,22 @@ const routes = [
     path: 'auth',
     component: () => import('layouts/Authorization.vue'),
     children: [
-      { path: '/main', component: () => import('pages/Auth/Authorization.vue') },
-      { path: '/login', component: () => import('pages/Auth/Login.vue') },
-      { path: '/registration', component: () => import('pages/Auth/Registration.vue') }
+      { 
+        path: '/main', 
+        component: () => import('pages/Auth/Authorization.vue')
+      },
+      { 
+        path: '/login', 
+        component: () => import('pages/Auth/Login.vue')
+      },
+      { 
+        path: '/registration', 
+        component: () => import('pages/Auth/Registration.vue')
+      },
+      {
+        path: '/forgot',
+        component: () => import('pages/Auth/Forgot.vue') 
+      }
     ]
   },
   {
