@@ -81,5 +81,10 @@ export default {
 </script>
 
 <style>
-
+.body {
+  background-image: url('../assets/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 80%
+}
 </style>
