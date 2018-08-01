@@ -1,41 +1,39 @@
 <template>
   <q-page>
-      <div class="qwe">
     <img alt="Arbex" class='logo' src="~assets/logo.png">
-    <h1 class='header'>Register</h1>
-      <form class="form">
-              <q-input 
-                v-model="email" 
-                class='form__input' 
-                placeholder='Email' 
-                inverted  
-                type="email"
-                autocomplete='false' 
-                :before="[{icon: 'mail', handler () {}}]" 
-              />
-              <q-input 
-                v-model="password" 
-                class='form__input' 
-                placeholder='Password' 
-                inverted  
-                type="password" 
-                :before="[{icon: 'lock', handler () {}}]" 
-              />
-              <q-input 
-                v-model="password" 
-                class='form__input' 
-                placeholder='Password' 
-                inverted  
-                type="password" 
-                :before="[{icon: 'lock', handler () {}}]" 
-              />
-      </form>
+    <form class="form-authorization">
+      <h1 class='form-authorization__header'>Register</h1>
+      <q-input 
+        v-model="email" 
+        class='form-authorization__input' 
+        placeholder='Email' 
+        inverted  
+        type="email"
+        autocomplete='false' 
+        :before="[{icon: 'mail', handler () {}}]" 
+      />
+      <q-input 
+        v-model="password" 
+        class='form-authorization__input' 
+        placeholder='Password' 
+        inverted  
+        type="password" 
+        :before="[{icon: 'lock', handler () {}}]" 
+      />
+      <q-input 
+        v-model="password" 
+        class='form-authorization__input' 
+        placeholder='Password' 
+        inverted  
+        type="password" 
+        :before="[{icon: 'lock', handler () {}}]" 
+      />
+    </form>
               
-      <!-- <span > -->
-          <div class="agree-checkbox">
-            <q-checkbox v-model="accepted"  class="agree-checkbox__label" label="I have read and agree to the" />   <router-link tag='span' class='forgot_button' to='/' >Terms of Service</router-link>
-          </div>
-        </div>
+    <div class="agree-checkbox">
+      <q-checkbox v-model="accepted"  class="agree-checkbox__label" label="I have read and agree to the" />
+      <router-link tag='span' class='forgot_button' to='/' >Terms of Service</router-link>
+    </div>
         
        
     <div class="button_group">
@@ -78,6 +76,7 @@
 <style lang='scss' scoped>
 .agree-checkbox {
     margin-top: 20px;
+    margin-bottom: 15px;
     &__label {
         color: #6D6D74;
         font-size: 11px
