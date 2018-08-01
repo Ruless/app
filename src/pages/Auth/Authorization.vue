@@ -1,17 +1,17 @@
 <template>
-  <q-page >
+  <q-page class="q-layout-page-login">
     <img alt="Arbex" class='logo' src="~assets/logo.png">
     <div class="button_group">
       <q-btn
           color="secondary"
           aria-label="Menu"
-          class='button_group__button'
+          class='button_group__login'
           @click='login("/registration")'
       > Register</q-btn>
       <q-btn
           color="primary"
           aria-label="Menu"
-          class='button_group__button'
+          class='button_group__login'
           @click='login("/login")'
       >Login</q-btn>
 
