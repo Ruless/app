@@ -1,5 +1,5 @@
 <template>
-  <q-page>
+  <q-page class="q-layout-page-login">
 
     <img alt="Arbex" class='logo' src="~assets/logo.png">
     <form class="form-authorization">
