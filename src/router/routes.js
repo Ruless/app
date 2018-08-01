@@ -19,7 +19,12 @@ const routes = [
       {
         path: '/forgot',
         component: () => import('pages/Auth/Forgot.vue') 
+      },
+      {
+        path: '/forgot/password',
+        component: () => import('pages/Auth/ForgotPassword.vue')
       }
+
     ]
   },
   {

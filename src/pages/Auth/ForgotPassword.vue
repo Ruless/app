@@ -3,15 +3,23 @@
 
     <img alt="Arbex" class='logo' src="~assets/logo.png">
     <form class="form-authorization">
-      <h1 class='form-authorization__header'>Reset Password</h1>
+      <h1 class='form-authorization__header'>Create a new Password</h1>
       <q-input 
         v-model="email" 
-        class='form-authorization__input form-authorization__input--once' 
-        placeholder='Email' 
+        class='form-authorization__input' 
+        placeholder='Enter new password' 
         inverted  
         type="email"
         autocomplete='false' 
-        :before="[{icon: 'mail', handler () {}}]" 
+        :before="[{icon: '', handler () {}}]" 
+      />
+      <q-input 
+        v-model="password" 
+        class='form-authorization__input form-authorization__input--once' 
+        placeholder='Confirm password' 
+        inverted  
+        type="password" 
+        :before="[{icon: '', handler () {}}]" 
       />
     </form>
     <div class="button_group">
@@ -43,7 +51,7 @@
     },
     methods: {
       login() {
-        this.$router.push('/forgot/password')
+        // this.$router.push('/login')
         
       }
     }
